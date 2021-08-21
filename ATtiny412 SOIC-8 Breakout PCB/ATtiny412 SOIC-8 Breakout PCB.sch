@@ -4,9 +4,9 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "ATtiny412 SOIC-8 Breakout PCB"
+Date "2021-08-21"
+Rev "B"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -47,20 +47,16 @@ F 3 "" H 1350 3100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 2300 4000 2500
+	2400 2150 3000 2150
+Connection ~ 3000 2150
 Wire Wire Line
-	3000 2500 3000 2300
-Wire Wire Line
-	2400 2300 3000 2300
-Connection ~ 3000 2300
-Wire Wire Line
-	3000 2300 3500 2300
+	3000 2150 3500 2150
 Wire Wire Line
 	3000 2700 3000 2900
 Wire Wire Line
 	3000 2900 2800 2900
 Wire Wire Line
-	3300 2400 3300 2900
+	3300 2250 3300 2900
 Wire Wire Line
 	3300 2900 3000 2900
 Connection ~ 3000 2900
@@ -75,8 +71,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/mic811.pdf" H 2050 2200 50 
 	1    2400 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 2300 2400 2600
 $Comp
 L power:GND #PWR04
 U 1 1 60C318D8
@@ -108,12 +102,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x03_Male J1
 U 1 1 60C3F499
-P 5050 1900
-F 0 "J1" H 5022 1878 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 5022 1833 50  0001 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5050 1900 50  0001 C CNN
-F 3 "~" H 5050 1900 50  0001 C CNN
-	1    5050 1900
+P 5050 1750
+F 0 "J1" H 5022 1728 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 5022 1683 50  0001 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5050 1750 50  0001 C CNN
+F 3 "~" H 5050 1750 50  0001 C CNN
+	1    5050 1750
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -179,56 +173,55 @@ $EndComp
 Wire Wire Line
 	4600 2800 4800 2800
 Wire Wire Line
-	4800 2000 4800 2400
+	4800 1850 4800 2250
 Wire Wire Line
-	3300 2400 4800 2400
-Connection ~ 4800 2400
+	3300 2250 4800 2250
 Wire Wire Line
-	4800 2400 4800 2800
+	4800 2250 4800 2800
 $Comp
 L power:GND #PWR08
 U 1 1 60C53C8F
-P 4750 1900
-F 0 "#PWR08" H 4750 1650 50  0001 C CNN
-F 1 "GND" V 4755 1772 50  0000 R CNN
-F 2 "" H 4750 1900 50  0001 C CNN
-F 3 "" H 4750 1900 50  0001 C CNN
-	1    4750 1900
+P 4750 1750
+F 0 "#PWR08" H 4750 1500 50  0001 C CNN
+F 1 "GND" V 4755 1622 50  0000 R CNN
+F 2 "" H 4750 1750 50  0001 C CNN
+F 3 "" H 4750 1750 50  0001 C CNN
+	1    4750 1750
 	0    1    -1   0   
 $EndComp
 $Comp
 L power:VCC #PWR07
 U 1 1 60C54FEB
-P 4750 1800
-F 0 "#PWR07" H 4750 1650 50  0001 C CNN
-F 1 "VCC" V 4765 1927 50  0000 L CNN
-F 2 "" H 4750 1800 50  0001 C CNN
-F 3 "" H 4750 1800 50  0001 C CNN
-	1    4750 1800
+P 4750 1650
+F 0 "#PWR07" H 4750 1500 50  0001 C CNN
+F 1 "VCC" V 4765 1777 50  0000 L CNN
+F 2 "" H 4750 1650 50  0001 C CNN
+F 3 "" H 4750 1650 50  0001 C CNN
+	1    4750 1650
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4850 1800 4750 1800
+	4850 1650 4750 1650
 Wire Wire Line
-	4850 1900 4750 1900
+	4850 1750 4750 1750
 Wire Wire Line
-	4850 2000 4800 2000
+	4850 1850 4800 1850
 $Comp
 L power:VCC #PWR05
 U 1 1 60C5CF4D
-P 3500 2200
-F 0 "#PWR05" H 3500 2050 50  0001 C CNN
-F 1 "VCC" H 3515 2373 50  0000 C CNN
-F 2 "" H 3500 2200 50  0001 C CNN
-F 3 "" H 3500 2200 50  0001 C CNN
-	1    3500 2200
+P 3500 2050
+F 0 "#PWR05" H 3500 1900 50  0001 C CNN
+F 1 "VCC" H 3515 2223 50  0000 C CNN
+F 2 "" H 3500 2050 50  0001 C CNN
+F 3 "" H 3500 2050 50  0001 C CNN
+	1    3500 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 2200 3500 2300
-Connection ~ 3500 2300
+	3500 2050 3500 2150
+Connection ~ 3500 2150
 Wire Wire Line
-	3500 2300 4000 2300
+	3500 2150 4000 2150
 $Comp
 L Device:C_Small C1
 U 1 1 60C5E78A
@@ -320,7 +313,7 @@ PA6
 Text Label 4900 3300 0    50   ~ 0
 PA7
 Text Label 4800 2550 1    50   ~ 0
-PDI
+UPDI
 Text Label 5350 2900 0    50   ~ 0
 MOSI
 Text Label 5350 3000 0    50   ~ 0
@@ -340,7 +333,7 @@ DAC_OUT
 Text Label 5600 2900 0    50   ~ 0
 SDA
 Text Label 5600 3000 0    50   ~ 0
-SCA
+SCL
 Text Notes 7045 4065 0    50   ~ 0
 1 2 3 4
 Text Notes 7045 2115 0    50   ~ 0
@@ -359,8 +352,8 @@ Wire Notes Line
 	7500 1900 6900 1900
 Text Notes 6975 1860 0    50   ~ 0
 I/O Headers
-Text Label 4800 2300 1    50   ~ 0
-PDI
+Text Label 4800 2150 1    50   ~ 0
+UPDI
 Text Label 3200 2900 2    50   ~ 0
 ~RST
 Text Label 6000 2900 0    50   ~ 0
@@ -387,14 +380,14 @@ PWM_WA
 Text Label 6400 3300 0    50   ~ 0
 PWM_WB
 Wire Notes Line
-	4350 1650 4350 2095
+	4350 1500 4350 1945
 Wire Notes Line
-	4350 2095 5250 2095
+	4350 1945 5250 1945
 Wire Notes Line
-	5250 2095 5250 1650
+	5250 1945 5250 1500
 Wire Notes Line
-	5250 1650 4350 1650
-Text Notes 4415 1610 0    50   ~ 0
+	5250 1500 4350 1500
+Text Notes 4415 1460 0    50   ~ 0
 Programming Header
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -499,4 +492,11 @@ F 3 "" H 4000 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4000 5200 4000 5300
+Wire Wire Line
+	4000 2150 4000 2500
+Wire Wire Line
+	3000 2150 3000 2500
+Wire Wire Line
+	2400 2150 2400 2600
+Connection ~ 4800 2250
 $EndSCHEMATC

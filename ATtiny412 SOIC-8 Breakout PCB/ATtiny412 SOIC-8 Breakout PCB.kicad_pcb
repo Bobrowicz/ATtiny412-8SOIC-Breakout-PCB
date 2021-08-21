@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.9)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.10)-1")
 
   (general
     (thickness 1.6)
@@ -10,6 +10,12 @@
   )
 
   (page A4)
+  (title_block
+    (title "ATtiny412 SOIC-8 Breakout PCB")
+    (date 2021-08-21)
+    (rev B)
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -34,7 +40,7 @@
   )
 
   (setup
-    (last_trace_width 0.254)
+    (last_trace_width 0.1524)
     (user_trace_width 0.254)
     (user_trace_width 0.508)
     (trace_clearance 0.1524)
@@ -122,7 +128,6 @@
     (add_net /~MR)
     (add_net GND)
     (add_net "Net-(D1-Pad1)")
-    (add_net "Net-(SW1-Pad2)")
     (add_net VCC)
   )
 
@@ -132,7 +137,7 @@
     (tags "resistor 0805")
     (path /60C2A4DD)
     (attr smd)
-    (fp_text reference R2 (at 0 -1.7) (layer F.SilkS)
+    (fp_text reference R2 (at 0 -1.397) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.0762)))
     )
     (fp_text value 470R (at 0 1.27) (layer F.Fab)
@@ -605,7 +610,7 @@
   (gr_text RESET (at 119.888 94.107 90) (layer F.SilkS)
     (effects (font (size 0.508 0.508) (thickness 0.0762)))
   )
-  (gr_text PDI (at 140.208 91.44 90) (layer F.SilkS)
+  (gr_text UPDI (at 140.208 91.44 90) (layer F.SilkS)
     (effects (font (size 0.508 0.508) (thickness 0.0762)))
   )
   (gr_text GND (at 140.208 93.98 90) (layer F.SilkS)
